@@ -1,0 +1,117 @@
+<head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="styles.css" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Serif+Pro">
+ 
+    <title>Free Celtic Cross Tarot Reader</title>
+</head>
+
+<main>
+
+
+  
+  <div class="container">
+    
+    <h1>&#x1F31A; Welcome to the Free Celtic Cross Tarot Reader! &#x1F31D;</h1>
+  
+    <h3>This engine will generate a randomized Celtic Cross Tarot reading, based on the Rider-Waite Tarot deck.</h3>
+  
+    <p> &#x1F31E; &#x1F311; &#x1F312; &#x1F313; &#x1F314;
+      &#x1F315; &#x1F316; &#x1F317; &#x1F318; &#x1F31E; </p>
+  
+    <p class="quote">The true Tarot is symbolism; it speaks no other language and offers no other signs. - A.E. Waite</p>
+  
+    <h4>To start, click the button below.</h4>
+  
+    <button onclick="draw_celtic_cross()"> Click for your reading!</button>
+    <button onclick="erase_display()"> Clear results </button>
+  
+    <br>
+    <br>
+  
+    <button onclick="show_all_cards()">Click to display all cards!</button>
+  
+    <br>
+  
+    <p id="p1">The spirits are speaking...</p>
+
+    <p>A true Tarot reading is best done with a Tarot practitioner. The story the cards tell by their relationship with each other contains most of the meaning. This site aims to teach students using the original interpretations given by A.E. Waite, but it is no substitute for a real reading. The author bears no responsibility for any  decisions made. </p>
+
+    <p>Tarot practitioners are energy healers and therapists, who use a combination of the symbolism in the cards and intuition to divine meanings and insights. A computer or web program is never a substitute for this type of relationship. With that said, a basic familiarity with the <a href="https://en.wikipedia.org/wiki/Rider%E2%80%93Waite_Tarot">RWS (Rider-Waite-Smith) Tarot</a> is essential for any beginning Tarot student, or curious onlooker.</p>
+
+    <p>On this site, we use the <a href="https://labyrinthos.co/blogs/learn-tarot-with-labyrinthos-academy/the-celtic-cross-tarot-spread-exploring-the-classic-10-card-tarot-spread>">Celtic Cross spread</a>, which provides a wealth of information for any reader.</p>
+
+    <p>Before you draw, get grounded with a short meditation. Call for the beneficient spirits of your ancestors and the Earth to provide you with protection and truth. Then, when you are ready, click the button.</p>
+    
+  
+    <p> &#x1F31E; &#x1F311; &#x1F312; &#x1F313; &#x1F314; &#x1F315; &#x1F316; &#x1F317; &#x1F318; &#x1F31E; </p>
+    
+  
+    <div class="grid-container-overall">
+      <div class="grid-container-cross-part">
+        <div class="cross-col-1">
+          <div class="grid-item-cross" id="celtic-num-3">
+          </div>
+        </div>
+        <div class="cross-col-2">
+          <div class="grid-item-cross" id="celtic-num-5">
+          </div>
+          <div class="special-grid-item-middle">
+            <div class="special-grid-item-1" id="celtic-num-1">
+            </div>
+            <div class="special-grid-item-2" id="celtic-num-2">
+            </div>
+          </div>
+          <div class="grid-item-cross" id="celtic-num-6">
+          </div>
+        </div>
+        <div class="cross-col-3">
+          <div class="grid-item-cross" id="celtic-num-4">
+          </div>
+        </div>
+      </div>
+  
+      <div class="grid-container-staff-part">
+        <div class="grid-item-staff" id="celtic-num-7">
+        </div>
+        <div class="grid-item-staff" id="celtic-num-8">
+        </div>
+        <div class="grid-item-staff" id="celtic-num-9">
+        </div>
+        <div class="grid-item-staff" id="celtic-num-10">
+        </div>
+      </div>
+    </div>
+  
+    <div id="explanation-display">
+      <div id="results"></div>
+      <!--     <p id="results-array"></p> -->
+      <!--     <ol id="results"></ol> -->
+  
+      <!-- <div class="placard-container" id="celtic-exp-1">
+        <p class="placard-container-item celtic-identifier-name">Celtic Card Name</p>
+        <div class="placard-container-item card-container" style="flex-grow: 2">
+          <img width=120 height=200px class="card-image card-container-item">
+          <p class="card-container-item card-name"></p>
+        </div>
+        <p class="placard-container-item card-explanation" style="flex-grow: 3"></p>
+      </div> -->
+    </div>
+
+    <div class="sidenote">
+      <p>Fun fact: This website was coded using pure JS!</p>
+      <p>Image sources: https://www.sacred-texts.com/tarot/pkt/index.htm</p>
+      <p>Design by Kez Wang</p>
+      </div>
+
+
+  </div>
+
+  
+  <!--   <button onclick="show_indexed_card(0)">Click to draw King of Pentacles card</button>-->
+  
+  <script src="script.js"></script>
+    
+  </main>
